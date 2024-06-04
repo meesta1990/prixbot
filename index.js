@@ -1,5 +1,6 @@
-const token = '7468611334:AAHFaAJUwJx0v5Rl_zjpSBlPdYvgl8N-uac';
 import TelegramBot from 'node-telegram-bot-api'
+
+const token = '7468611334:AAHFaAJUwJx0v5Rl_zjpSBlPdYvgl8N-uac';
 const bot = new TelegramBot(token, {polling: true});
 let intervalId;
 
