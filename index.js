@@ -1,7 +1,6 @@
-const TelegramBot = require('node-telegram-bot-api');
 const token = '7468611334:AAHFaAJUwJx0v5Rl_zjpSBlPdYvgl8N-uac';
+import TelegramBot from 'node-telegram-bot-api'
 const bot = new TelegramBot(token, {polling: true});
-
 let intervalId;
 
 const frasi = [
@@ -33,7 +32,7 @@ const sendGreeting = (chatId) => {
   setTimeout(() => {
     const y = Math.floor(Math.random() * frasi.length -1) + 1
     bot.sendMessage(chatId, frasi[y]);
-  }, 6000);
+  }, 2000);
 };
 
 // Gestore del comando /start
